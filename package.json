@@ -1,0 +1,85 @@
+{
+  "name": "EduLink",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@octokit/rest": "^21.0.2",
+    "@popperjs/core": "^2.11.8",
+    "@react-oauth/google": "^0.12.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "apollo-server-express": "^2.26.2",
+    "arxiv-api": "^1.1.1",
+    "autoprefixer": "^10.4.20",
+    "blob-polyfill": "^9.0.20240710",
+    "bootstrap": "^5.3.3",
+    "concurrently": "^9.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "esbuild": "^0.24.0",
+    "express": "^4.21.1",
+    "flowbite": "^2.5.2",
+    "flowbite-react": "^0.10.2",
+    "graphql": "^15.9.0",
+    "jwt-decode": "^4.0.0",
+    "lodash": "^4.17.21",
+    "mdb-ui-kit": "^8.0.0",
+    "mongodb": "^3.7.4",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^1.18.9",
+    "openai": "^4.73.0",
+    "preline": "^2.5.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-chatbotify": "^2.0.0-beta.24",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.3.0",
+    "react-router-dom": "^6.2.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "nodemon": "^3.1.7",
+    "postcss": "^8.4.47",
+    "sass": "1.77.6",
+    "tailwindcss": "^3.4.14",
+    "vite": "^4.5.5"
+  },
+  "scripts": {
+    "start": "concurrently \"vite\" \"nodemon -w server/ProxyServer.mjs server/ProxyServer.mjs\" \"nodemon -w server/server.js server/server.js\"",
+    "build": "vite build",
+    "server": "node server/server.js",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "eslintConfig": {
+    "root": true
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
