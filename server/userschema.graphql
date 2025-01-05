@@ -1,0 +1,72 @@
+scalar GraphQLDate
+
+type User {
+    _id: ID!
+    id: Int!
+    email: String!
+    fullName: String!   
+    picture: String 
+    collections: [VideoCollection!]!
+    history: [VideoHistory!]!
+}
+
+input InputUser {
+	id: Int!
+	fullName: String!   
+	email: String!
+	picture: String 
+}
+
+input InputVideoCollection {
+    videoId: String!
+    title: String!
+    image: String!
+    source: String!
+    description: String!
+    videoUrl: String!
+    addedAt: GraphQLDate!
+}
+
+input InputVideoHistory {
+    videoId: String!
+    title: String!
+    image: String!
+    source: String!
+    description: String!
+    videoUrl: String!
+    watchedAt: GraphQLDate!
+}
+
+type VideoCollection {
+    videoId: String!
+    title: String!
+    image: String!
+    description: String!
+    source: String!
+    videoUrl: String!
+    addedAt: GraphQLDate!
+}
+
+type VideoHistory {
+    videoId: String!
+    title: String!
+    image: String!
+    source: String!
+    description: String!
+    videoUrl: String!
+    watchedAt: GraphQLDate!
+}
+
+type Mutation {
+    addUser(user: InputUser!): User!
+    addVideoToCollection(email: String!, video: InputVideoCollection!): User!
+    removeVideoFromCollection(email: String!, videoId: String!): User!
+    addVideoToHistory(email: String!, video: InputVideoHistory!): User!
+    clearVideoHistory(email: String!): User!
+    clearVideoCollection(email: String!): User!
+}
+
+type Query {
+    listVideoHistory(email: String!): [VideoHistory!]!               
+    listVideoCollection(email: String!): [VideoCollection!]!         
+}

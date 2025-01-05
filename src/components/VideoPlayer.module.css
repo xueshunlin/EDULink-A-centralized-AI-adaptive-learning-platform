@@ -1,0 +1,160 @@
+.coverIcon,
+.progBar,
+.progressComponents {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.coverIcon {
+  height: 85.31%;
+  bottom: 14.69%;
+  border-radius: var(--br-sm);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.progBar,
+.progressComponents {
+  height: 100%;
+  bottom: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-gray-500);
+}
+.progressComponents {
+  width: 21.59%;
+  right: 78.41%;
+  background-color: var(--color-red);
+}
+.progressBar {
+  position: absolute;
+  height: 1.22%;
+  width: 95.16%;
+  top: 74.59%;
+  right: 2.42%;
+  bottom: 24.19%;
+  left: 2.42%;
+}
+.pauseIcon {
+  position: relative;
+  width: 18.3px;
+  height: 21.4px;
+}
+.nextIcon,
+.volumeIcon {
+  position: absolute;
+  height: 2.2%;
+  width: 1.98%;
+  top: 78.97%;
+  right: 90.32%;
+  bottom: 18.83%;
+  left: 7.7%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.volumeIcon {
+  height: 2.92%;
+  width: 9.54%;
+  top: 78.36%;
+  right: 77.85%;
+  bottom: 18.72%;
+  left: 12.62%;
+  object-fit: cover;
+}
+.settingsIcon {
+  position: relative;
+  width: 22.4px;
+  height: 24.1px;
+  mix-blend-mode: normal;
+}
+.fullScreenIcon,
+.sizeIcon,
+.subtitlesIcon {
+  position: relative;
+  width: 24.9px;
+  height: 18.7px;
+  mix-blend-mode: normal;
+}
+.fullScreenIcon,
+.subtitlesIcon {
+  width: 27.4px;
+  height: 21.4px;
+}
+.subtitlesIcon {
+  width: 22.4px;
+  height: 16.1px;
+}
+.time,
+.time1 {
+  top: calc(50% + 149.2px);
+}
+.time {
+  position: absolute;
+  width: 3.97%;
+  left: 20.92%;
+  display: inline-block;
+  min-width: 45px;
+}
+.time1 {
+  width: 5.3%;
+  left: 94.3%;
+  text-align: right;
+  min-width: 60px;
+  white-space: nowrap;
+}
+.kViews,
+.time1,
+.title {
+  position: absolute;
+  display: inline-block;
+}
+.title {
+  margin: 0;
+  width: 70.64%;
+  top: calc(50% + 283.2px);
+  left: 0;
+  font-size: var(--font-size-17xl);
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--color-gray-100);
+}
+.kViews {
+  width: 15.89%;
+  top: calc(50% + 341.2px);
+  left: 0.09%;
+  font-size: var(--paragraph-size);
+  color: var(--color-silver);
+}
+.videoPlayer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--background-default-default);
+  font-family: var(--font-mulish);
+}
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: var(--font-size-10xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .time,
+  .time1 {
+    font-size: var(--font-size-lg);
+  }
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+  .kViews {
+    font-size: var(--body-base-size);
+  }
+}

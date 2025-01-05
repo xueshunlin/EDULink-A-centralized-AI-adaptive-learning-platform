@@ -1,0 +1,71 @@
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* Full width of the parent container */
+    max-width: 800px;
+    /* Add padding for spacing */
+    background-color: #ffffff;
+    /* White background for contrast */
+    border-radius: 50px;
+    /* Rounded edges */
+    margin-bottom: 20px;
+    /* Subtle shadow for depth */
+    position: relative;
+    padding: 10px;
+}
+
+.searchbar input {
+    width: 100%;
+    /* Ensure input takes the full container width */
+    padding: 0.8rem 1rem;
+    /* Increased padding for better usability */
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    /* Slightly larger font size */
+    color: #333;
+    /* Darker text color for readability */
+    border-radius: 50px;
+    font-family: inherit;
+}
+
+.searchbar svg {
+    margin-right: 0.5rem;
+    color: #666;
+}
+
+.searchbar input::placeholder {
+    color: #aaa;
+}
+
+.suggestionBox {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.searchbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.textContentHeadingParent {
+    align-self: stretch;
+    position: relative;
+    background-color: var(--background-default-default);
+    height: 1335px;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 2;
+    font-family: var(--paragraph);
+}

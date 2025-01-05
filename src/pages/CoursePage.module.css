@@ -1,0 +1,51 @@
+/* Main page container */
+.coursePage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-default-default);
+  color: var(--color-black);
+  font-family: var(--style-header);
+  padding-top: 20px;
+  font-size: var(--style-header-size);
+  padding-bottom: 50px;
+}
+
+/* Title styling */
+h1 {
+  font-size: 100px;
+  align-self: flex-start;
+  width: 80%;
+  padding-left: 10%;
+  padding-bottom: 10px;
+  color: #333;
+  text-align: left;
+}
+
+/* Category grid container */
+.categrps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 80%;
+  /* Matches the title width */
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+/* Card component styling */
+.card {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* Card button icon (arrow) */
+.cardButton svg {
+  margin-left: 8px;
+}

@@ -1,0 +1,94 @@
+  /* src/global.css */
+  @import 'flowbite';
+  @import 'tailwindcss/base';
+  @import 'tailwindcss/components';
+  @import 'tailwindcss/utilities';
+
+  :root {
+    /* Typography */
+    --paragraph: "Roboto", sans-serif;
+    --font-mulish: "Mulish", sans-serif;
+    --body-base: "Inter", sans-serif;
+    --style-header: "Abhaya Libre ExtraBold", serif;
+
+    /* Font Sizes */
+    --body-base-size: 16px;
+    --font-size-13xl: 32px;
+    --font-size-lgi: 19px;
+    --font-size-7xl: 26px;
+    --font-size-sm: 14px;
+    --paragraph-size: 20px;
+    --font-size-lg: 18px;
+    --heading-size: 24px;
+    --font-size-17xl: 36px;
+    --font-size-3xl: 22px;
+    --font-size-10xl: 29px;
+    --style-header-size: 48px;
+    --header-size: 40px;
+
+    /* Colors */
+    --background-default-default: #fff;
+    --color-black: #000;
+    --schemes-on-surface-variant: #49454f;
+    --text-default-secondary: #757575;
+    --color-gray-100: #192646;
+    --color-gray-200: #19202c;
+    --text-default-default: #1e1e1e;
+    --color-gray-300: rgba(0, 0, 0, 0.51);
+    --color-gray-400: rgba(255, 255, 255, 0);
+    --color-gray-500: rgba(255, 255, 255, 0.2);
+    --color-whitesmoke-100: #ebebeb;
+    --color-silver: #c2c2c2;
+    --color-red: #ff0000;
+    --border-default-default: #d9d9d9;
+    --color-papayawhip: #fbefd4;
+    --color-floralwhite: #fbf9ee;
+    --text-default-tertiary: #b3b3b3;
+    --color-darkslateblue: #002c6a;
+    --color-theme-blue: #0045b3;
+    --color-blueviolet: #9747ff;
+
+    /* Spacing */
+    --space-400: 16px;
+    --space-4000: 160px;
+    --space-800: 32px;
+    --space-300: 12px;
+    --space-600: 24px;
+    --space-200: 8px;
+    --space-1600: 64px;
+    --space-1200: 48px;
+    --radius-200: 8px;
+    --space-050: 2px;
+    --radius-full: 9999px;
+    --icon-large: 40px;
+
+    /* Gaps */
+    --gap-base: 16px;
+    --gap-xs: 12px;
+    --gap-5xl: 24px;
+    --gap-5xs: 8px;
+    --gap-29xl: 48px;
+    --gap-11xs: 2px;
+
+    /* Paddings */
+    --padding-5xs: 8px;
+    --padding-13xl: 32px;
+    --padding-141xl: 160px;
+    --padding-base: 16px;
+    --padding-3xs: 10px;
+    --padding-11xl: 30px;
+    --padding-5xl: 24px;
+
+    /* Border Radii */
+    --br-21xl: 40px;
+    --br-81xl: 100px;
+    --br-sm: 14px;
+    --br-xs: 12px;
+    --br-8xs: 5px;
+    --br-xl: 20px;
+    --br-4xs: 9px;
+    --br-6xl: 25px;
+    --br-5xs: 8px;
+    --br-9980xl: 9999px;
+    --br-mini: 15px;
+  }

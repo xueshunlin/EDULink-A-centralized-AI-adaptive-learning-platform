@@ -1,0 +1,29 @@
+.icon {
+  width: 24px;
+  position: relative;
+  height: 24px;
+}
+.stateLayer {
+  flex-direction: row;
+  padding: var(--padding-5xs);
+}
+.container,
+.stTrailingIcon,
+.stateLayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  border-radius: var(--br-81xl);
+  overflow: hidden;
+  flex-direction: row;
+}
+.stTrailingIcon {
+  position: absolute;
+  top: calc(50% - 23.5px);
+  left: 32px;
+  width: 48px;
+  height: 48px;
+  flex-direction: column;
+}

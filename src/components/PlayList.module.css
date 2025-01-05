@@ -1,0 +1,109 @@
+.playlistContainer {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  overflow-y: auto; /* scroll if content is too long */
+}
+
+.playlistTitle {
+  position: sticky; /* Ensures the title stays fixed at the top of the right column */
+  top: 0; /* Position relative to the top of the container */
+  background-color: #000000; /* Matches the background color of the right column */
+  /* z-index: 10; Ensures the title is above other scrolling content */
+  padding: 10px 0; /* Adds padding above and below the text */
+  text-align: center; /* Centers the title text horizontally */
+  font-size: 1.2rem; /* Sets the font size for the title */
+  font-weight: bold; /* Makes the title text bold */
+  color: white; /* Sets the font color to white */
+  border-bottom: 1px solid #ddd; /* Adds a subtle bottom border for separation */
+}
+
+.playlistList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playlistItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.playlistItem:hover {
+  transform: scale(1.02);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.clickableArea {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* column layout */
+  gap: 10px;
+  flex: 1; /* take up remaining space */
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.videoInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.videoTitle {
+  font-size: 0.75em;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.videoTags {
+  font-size: 0.7em;
+  color: #666;
+  margin: 5px 0 0;
+}
+
+.videoPubDate {
+  font-size: 0.8em;
+  color: #999;
+}
+
+.addButton {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+.videoMetadata {
+  font-size: 0.7rem;
+  color: #666; /* font color */
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}

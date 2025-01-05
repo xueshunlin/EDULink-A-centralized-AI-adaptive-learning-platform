@@ -1,0 +1,64 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--color-papayawhip);
+    border-top: 1px solid var(--border-default-default);
+    box-sizing: border-box;
+    width: 100%; /* 动态宽度，适应屏幕 */
+    padding: var(--space-800); /* 移除底部额外的padding */
+    gap: var(--space-400);
+    font-size: var(--body-base-size);
+    color: var(--text-default-default);
+    font-family: var(--body-base);
+  }
+  
+  .textLinkList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--space-300);
+    min-width: 180px; /* 最小宽度确保布局稳定 */
+    flex: 1; /* 让子元素在 footer 中分配均匀空间 */
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-600);
+  }
+  
+  .buttonList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--space-400);
+  }
+  
+  /* 添加媒体查询，让 footer 在小屏幕上更好适配 */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      padding: var(--space-600);
+      gap: var(--space-600);
+    }
+  
+    .textLinkList {
+      align-items: center;
+      text-align: center;
+      min-width: unset;
+      flex: unset;
+      width: 100%; /* 全宽度布局 */
+    }
+  
+    .buttonList {
+      justify-content: center;
+    }
+  }
+  

@@ -1,0 +1,53 @@
+.rcb-chat-input {
+  display: flex;
+  padding: 0.5rem; /* Reduced from 2rem to avoid extra white space */
+  border-top: 1px solid #e5e7eb;
+}
+
+.rcb-chat-input textarea {
+  margin: 0; /* Remove any inherited margin */
+  padding: 6px; /* Ensure sufficient padding for usability */
+  line-height: 1.2; /* Explicitly set to avoid inheriting larger line-heights */
+}
+
+.rcb-chat-window {
+  position: fixed;
+  bottom: 38px; /* Adjust to reduce overlap */
+  right: 5px;
+  width: 500px;
+  height: 640px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.rcb-chat-header-container {
+  padding: 10px;
+  line-height: 1.4; /* Prevent header text from affecting layout */
+}
+
+.rcb-toggle-button {
+  width: 60px;
+  height: 60px; 
+  /* border-radius: 50%; */
+  /* background: linear-gradient(to right, #492D8D, #42B0C5); */
+  /* cursor: pointer; */
+  bottom: 26px;
+  right: 38px;
+}
+
+.rcb-chat-tooltip {
+  position: flex; /* Adjusted to flex for better alignment */
+  background-color: #492D8D;
+  color: #FFF;
+  padding: 9px; /* Adjust padding */
+  border-radius: 6px; /* Adjust border radius */
+  font-size: 10px; /* Smaller font size */
+  right: 30px; /* Adjusted horizontally for better alignment */
+}
+
+.rcb-chat-tooltip span {
+  font-size: 14px; /* Ensure text inside tooltip is smaller */
+  line-height: 2; /* Prevent extra height affecting alignment */
+}

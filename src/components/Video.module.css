@@ -1,0 +1,86 @@
+.dollieBlair,
+.kViews {
+  position: absolute;
+  width: 49.85%;
+  top: calc(50% + 95.9px);
+  left: 0.82%;
+  display: inline-block;
+  height: 24px;
+}
+.dollieBlair {
+  width: 45.92%;
+  left: 53.95%;
+  text-align: right;
+  height: 29px;
+}
+.album7Icon {
+  position: absolute;
+  height: 76.1%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 23.9%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.selectingTheRight {
+  position: absolute;
+  width: 85.83%;
+  top: calc(50% + 68.9px);
+  left: 0.16%;
+  font-size: var(--paragraph-size);
+  display: inline-block;
+  color: var(--color-gray-200);
+}
+.previewThumbnails {
+  position: absolute;
+  height: 100%;
+  width: 36.17%;
+  top: 0;
+  right: -0.09%;
+  bottom: 0;
+  left: 63.92%;
+  border-radius: var(--br-xs);
+  background-color: var(--color-black);
+  opacity: 0.3;
+  mix-blend-mode: normal;
+}
+.div {
+  position: absolute;
+  width: 95.28%;
+  top: calc(50% - 7.6px);
+  left: 0;
+  display: inline-block;
+}
+.previewThumbnailsParent {
+  position: absolute;
+  height: 8.57%;
+  width: 35.45%;
+  top: 63.93%;
+  right: 2.72%;
+  bottom: 27.5%;
+  left: 61.82%;
+  text-align: right;
+  font-size: var(--font-size-sm);
+  color: var(--background-default-default);
+}
+.video {
+  position: absolute;
+  width: 82.21%;
+  top: calc(50% - 467.7px);
+  right: 0.67%;
+  left: 17.12%;
+  height: 249.8px;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-silver);
+  font-family: var(--font-mulish);
+}
+@media screen and (max-width: 450px) {
+  .selectingTheRight {
+    font-size: var(--body-base-size);
+  }
+}

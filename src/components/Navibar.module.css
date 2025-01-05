@@ -1,0 +1,46 @@
+.navibar {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 27px;
+  height: 104px;
+  z-index: 4;
+  font-family: var(--paragraph);
+}
+
+.navibarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.logoIcon {
+  height: 100%;
+  width: auto;
+  max-height: 80%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.navLink {
+  cursor: pointer;
+  padding: var(--padding-3xs) var(--padding-11xl);
+  background-color: var(--background-default-default);
+  border-radius: var(--br-4xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.loginContainer {
+  margin-left: auto;
+  margin-right: 60px;
+}
